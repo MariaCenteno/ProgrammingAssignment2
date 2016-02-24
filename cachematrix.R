@@ -11,7 +11,8 @@ makeCacheMatrix <- function(x = matrix()) {
   list(get=get,setmatrix=setmatrix,getmatrix=getmatrix)
 }
 
-## This function will get the cached inverse matrix or calculate it
+## This function will get the cached inverse matrix or calculate it 
+## if there is no stored inverse matrix in cache
 
 cacheSolve <- function(x=matrix(), ...) {
   y<-x$getmatrix()
